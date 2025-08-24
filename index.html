@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trabalho de Artes — A Última Ceia</title>
+  <meta name="description" content="Trabalho escolar de Artes sobre 'A Última Ceia' de Leonardo da Vinci — contexto, composição, técnica, simbolismo e atividades." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #f7f7f9; 
+      --card: #ffffff; 
+      --ink: #1f2937; 
+      --muted: #6b7280; 
+      --brand: #0ea5e9; 
+      --ring: rgba(14,165,233,0.25);
+      --shadow: 0 10px 30px rgba(2,6,23,0.08);
+      --radius: 18px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:linear-gradient(180deg,#fbfbfc, var(--bg));color:var(--ink)}
+    body{font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;line-height:1.6}
+    img{max-width:100%;display:block}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .container{max-width:1100px;margin:0 auto;padding:28px 20px}
+
+    header .title{font-weight:800;letter-spacing:-0.02em}
+    header .subtitle{color:var(--muted)}
+    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .tag{font-size:12px;background:#eef6ff;color:#074b72;border:1px solid #cde9ff;padding:6px 10px;border-radius:999px}
+
+    .actions{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{appearance:none;border:0;border-radius:12px;padding:12px 16px;background:var(--ink);color:#fff;font-weight:600;cursor:pointer;box-shadow:var(--shadow);transition:transform .08s ease, box-shadow .2s ease}
+    .btn.secondary{background:#eaf4ff;color:#0b3750}
+    .btn:hover{transform:translateY(-1px)}
+
+    .grid{display:grid;gap:22px}
+    @media(min-width:850px){.grid{grid-template-columns:1.1fr 1fr}}
+
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #eef2f7}
+    .card .content{padding:22px}
+    .card h2{margin:0 0 8px 0;font-size:22px}
+    .muted{color:var(--muted)}
+
+    .hero{overflow:hidden}
+    .hero figure{position:relative}
+    .hero img{height:55vh;object-fit:cover;width:100%}
+    .hero figcaption{position:absolute;left:0;right:0;bottom:0;padding:10px 12px;font-size:12px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.65));color:#fff}
+
+    .kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+    .pill{background:#f6f8fb;border:1px solid #e8edf5;border-radius:14px;padding:10px 12px}
+    .pill strong{display:block;font-size:13px}
+    .pill span{font-size:12px;color:var(--muted)}
+
+    details{border:1px solid #e8edf5;border-radius:14px;padding:12px 14px;background:#fbfdff}
+    summary{cursor:pointer;font-weight:600}
+    details + details{margin-top:10px}
+
+    ol, ul{padding-left:18px}
+    blockquote{margin:14px 0;padding:14px 18px;border-left:4px solid var(--brand);background:#f5fbff;border-radius:12px}
+
+    footer{color:var(--muted);font-size:14px}
+
+    /* Impressão */
+    @media print{
+      .actions, .hero figcaption a{display:none!important}
+      body{background:#fff}
+      .card{box-shadow:none;border:1px solid #e5e7eb}
+      .hero img{height:auto}
+    }
+  </style>
+</head>
+<body>
+  <header class="container" role="banner">
+    <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between">
+      <div>
+        <h1 class="title" style="font-size:clamp(28px,4.5vw,46px);margin:0">A Última Ceia</h1>
+        <p class="subtitle" style="margin:6px 0 0 0">Leonardo da Vinci • Convento de Santa Maria delle Grazie, Milão • ~1495–1498</p>
+        <div class="tags">
+          <span class="tag">Alto Renascimento</span>
+          <span class="tag">Técnica mista sobre seco</span>
+          <span class="tag">Perspectiva linear</span>
+          <span class="tag">Simbolismo cristão</span>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btn" onclick="window.print()">🖨️ Imprimir / Salvar PDF</button>
+        <a class="btn secondary" href="https://pt.wikipedia.org/wiki/%C3%9Altima_Ceia_(Leonardo_da_Vinci)" target="_blank" rel="noreferrer">🔗 Fonte rápida</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="container hero">
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Leonardo_da_Vinci_-_The_Last_Supper_high_res.jpg/960px-Leonardo_da_Vinci_-_The_Last_Supper_high_res.jpg" alt="A Última Ceia de Leonardo da Vinci" />
+      <figcaption>
+        Imagem: Wikimedia Commons — uso educacional. 
+        <a href="https://commons.wikimedia.org/wiki/File:%C3%9Altima_Cena_-_Leonardo_da_Vinci_5.jpg" target="_blank" rel="noreferrer" style="color:#c7e7ff">(ver arquivo)</a>
+      </figcaption>
+    </figure>
+  </section>
+
+  <main class="container" role="main">
+    <div class="grid">
+      <article class="card">
+        <div class="content">
+          <h2>Visão Geral da Obra</h2>
+          <p>
+            “A Última Ceia” representa o momento em que Jesus anuncia que um dos apóstolos irá traí-lo (João 13:21). Leonardo organiza os apóstolos em grupos de três, 
+            conduz o olhar ao ponto de fuga no rosto de Cristo e cria uma narrativa visual marcada por gestos e expressões intensas.
+          </p>
+          <ul>
+            <li>Dimensões aproximadas: 460 × 880 cm;</li>
+            <li>Técnica: mistura de têmpera/óleo sobre reboco seco (não afresco tradicional);</li>
+            <li>Local: Refeitório do convento de Santa Maria delle Grazie, em Milão.</li>
+          </ul>
+
+          <div class="kpi">
+            <div class="pill"><strong>1495–1498</strong><span>Período de execução</span></div>
+            <div class="pill"><strong>Ponto de fuga</strong><span>No rosto de Cristo</span></div>
+            <div class="pill"><strong>4×3</strong><span>Grupos de apóstolos</span></div>
+          </div>
+        </div>
+      </article>
+
+      <aside class="card">
+        <div class="content">
+          <h2>Contexto Histórico</h2>
+          <p>
+            Produzida no Alto Renascimento, a obra reflete o interesse humanista por ciência, matemática e anatomia. O mecenato de Ludovico Sforza em Milão favoreceu 
+            a pesquisa técnica de Leonardo e a integração entre arte e conhecimento científico.
+          </p>
+          <ul>
+            <li>Valorização da razão, proporção e estudo da natureza;</li>
+            <li>Milão como centro cultural sob influência dos Sforza;</li>
+            <li>Experimentação técnica com ligantes oleosos em suporte seco.</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <section class="grid" style="margin-top:22px">
+      <article class="card">
+        <div class="content">
+          <h2>Composição e Perspectiva</h2>
+          <p>
+            A mesa atravessa a largura da cena, separando discretamente o espectador dos apóstolos. As linhas arquitetônicas convergem no rosto de Cristo, 
+            centralizando a cena e reforçando sua importância espiritual. As janelas ao fundo criam profundidade e uma luz serena.
+          </p>
+          <details>
+            <summary>Grupos de três</summary>
+            <p>Os doze apóstolos se organizam em quatro grupos de três, criando ritmos visuais e diálogos gestuais. Judas aparece levemente recuado, com uma bolsa — sinal de traição.</p>
+          </details>
+          <details>
+            <summary>Gestos e expressões</summary>
+            <p>Cada apóstolo reage de forma distinta ao anúncio de Cristo, do espanto à negação, revelando a observação psicológica de Leonardo.</p>
+          </details>
+          <details>
+            <summary>Luz e espaço</summary>
+            <p>A luz suave entra pelas janelas e modela as figuras. A perspectiva linear organiza o espaço com clareza.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="content">
+          <h2>Técnica e Materiais</h2>
+          <p>
+            Em vez do afresco úmido tradicional, Leonardo aplicou pigmentos sobre gesso seco com ligantes oleosos. Isso permitiu retoques e detalhes finos, 
+            mas tornou a pintura vulnerável à umidade e ao descascamento, exigindo restaurações posteriores.
+          </p>
+          <ul>
+            <li>Estudos prévios em desenho para anatomia e drapeados;</li>
+            <li>Transições suaves de cor (sfumato);</li>
+            <li>Restaurações extensas nos séculos XX–XXI.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section class="grid" style="margin-top:22px">
+      <article class="card">
+        <div class="content">
+          <h2>Simbolismo e Interpretações</h2>
+          <p>
+            O sal derramado diante de Judas sugere mau agouro; a mão de Pedro com a faca indica tensão; as tríades reforçam a ordem divina. O espaço do refeitório conecta a obra ao alimento eucarístico.
+          </p>
+          <div class="kpi">
+            <div class="pill"><strong>Judas</strong><span>Figura em leve sombra</span></div>
+            <div class="pill"><strong>Trindade</strong><span>Três janelas e tríades</span></div>
+            <div class="pill"><strong>Cristo</strong><span>Centro e horizonte</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="content">
+          <h2>Atividades para o Trabalho</h2>
+          <ol>
+            <li><strong>Mapa visual:</strong> Diagrama com os 13 personagens (emoções e gestos).</li>
+            <li><strong>Perspectiva:</strong> Trace as linhas de fuga e identifique o ponto de fuga.</li>
+            <li><strong>Recriação:</strong> Recrie a cena com objetos do cotidiano em grupos de três.</li>
+            <li><strong>Relato curto:</strong> Conecte a obra à Eucaristia (Jo 13) em um parágrafo.</li>
+          </ol>
+        </div>
+      </article>
+    </section>
+
+    <section class="card" style="margin-top:22px">
+      <div class="content">
+        <h2>Curiosidades</h2>
+        <ul>
+          <li>A técnica não é um afresco tradicional; isso contribuiu para a degradação precoce.</li>
+          <li>A obra sofreu com umidade, guerras e restaurações; muito do que vemos hoje resulta de conservação.</li>
+          <li>As reações dos apóstolos foram pensadas a partir da observação do comportamento humano.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:22px">
+      <div class="content">
+        <h2>Referências</h2>
+        <ul>
+          <li>Wikipedia (PT): <a href="https://pt.wikipedia.org/wiki/%C3%9Altima_Ceia_(Leonardo_da_Vinci)" target="_blank" rel="noreferrer">A Última Ceia</a></li>
+          <li>Wikipedia (EN): <a href="https://en.wikipedia.org/wiki/The_Last_Supper_(Leonardo)" target="_blank" rel="noreferrer">The Last Supper</a></li>
+          <li>Wikimedia Commons (imagem): <a href="https://commons.wikimedia.org/wiki/File:%C3%9Altima_Cena_-_Leonardo_da_Vinci_5.jpg" target="_blank" rel="noreferrer">Arquivo em alta</a></li>
+        </ul>
+        <blockquote class="muted">Dica: use o botão “Imprimir/Salvar PDF” para gerar um PDF limpo para entrega.</blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container" role="contentinfo" style="margin:28px 0 38px 0">
+    <p>Trabalho de Artes • <em>A Última Ceia</em>, Leonardo da Vinci (~1495–1498). Página HTML autoral para fins educacionais.</p>
+  </footer>
+</body>
+</html>
